@@ -92,8 +92,8 @@
   }
 
   .section-title {
-    @include font($main-font, 28px, 700, 1.2);
-    margin-bottom: 60px;
+    @include font($main-font, 28px, 700, 36px);
+    margin-bottom: 62px;
   }
 
   .customer-review {
@@ -110,5 +110,21 @@
 
 
 @media (min-width: 1200px) {
+  .reviews {
+    padding-top: 68px;
+    padding-bottom: 130px;
+  }
   
-}
+  .customer-position {
+    margin-bottom: 45px;
+  }
+
+  .customer-review {
+    max-width: 940px;
+
+    &::before {
+      transform: translate(-50px, 26px);
+    }
+  } 
+
+  }
