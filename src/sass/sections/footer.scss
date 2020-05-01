@@ -190,25 +190,25 @@
 }
 
 .contact__info-template {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 6px;
   @include font($sec-font, 14px, 400, 21px);
   color: rgba(255, 255, 255, 0.502);
 
+  &_span {
+    display: block;
+  }
+
   &::before {
+    position: absolute;
     content: '';
     display: block;
     width: 320px;
     height: 5px;
     background-color: $sec-color;
-    margin-bottom: 20px;
+    top: -20px;
+    left: -14px;
   }
-}
-
-.bottom_line {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 0px;
-  top: 5818px;
-  width: 320px;
-  height: 5px;
-  z-index: 193;
 }
