@@ -79,9 +79,30 @@
 }
 
 @media (max-width: 560px) {
-  .section-title-span {
-    display: block;
-    margin: 0 auto;
+  .section-title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 18px;
+
+    &-span {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &::before {
+      position: absolute;
+      transform: translate(-100px, -14px);
+    }
+
+    &::after {
+      position: absolute;
+      transform: translate(100px, -14px);
+    }
   }
 }
 
@@ -92,8 +113,10 @@
   }
 
   .section-title {
-    @include font($main-font, 28px, 700, 36px);
+    flex-wrap: nowrap;
     margin-bottom: 62px;
+    text-align: center;
+    font-size: 28px;
   }
 
   .customer-review {
@@ -108,13 +131,12 @@
   }
 }
 
-
 @media (min-width: 1200px) {
   .reviews {
     padding-top: 68px;
     padding-bottom: 130px;
   }
-  
+
   .customer-position {
     margin-bottom: 45px;
   }
@@ -125,6 +147,5 @@
     &::before {
       transform: translate(-50px, 26px);
     }
-  } 
-
   }
+}
