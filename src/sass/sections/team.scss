@@ -1,0 +1,125 @@
+@media (max-width: 767px) {
+   
+    .section-title::before {
+        margin-right: 14px;
+    }
+
+    .section-title::after {
+        margin-left: 14px;
+    }
+}
+
+.team {
+  padding-top: 58px;
+    
+    &__deskription {
+        display: block;
+        width: 260px;
+        text-align: center;
+        margin: 0 auto;
+        @include font($sec-font, 16px, 700, 26px);
+        padding: 34px 0 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__list-item {
+        text-align: center;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 54px;
+    }
+
+    &__photo-wrapper {
+        position: relative;
+        margin: 0 auto 22px;
+    }
+
+    &__photo-wrapper:hover >
+    &__overlay {
+            display: block;
+        }
+
+    &__overlay {
+        display: none;
+        position: absolute;
+        width: 270px;
+        padding: 22px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(14, 180, 147, 0.85);
+        
+        &-deskription {
+            @include font($sec-font, 16px, 400, 24px);
+            color: $sec-color;
+            margin-bottom: 58px;
+        }
+
+        &-deskription-title {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    
+        &-item {
+            position: relative;
+            display: block;
+            width: 42px;
+            height: 42px;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-bottom: 22px;
+        }
+
+        &-item:hover,
+        &-item:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 4px;
+        }
+
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            fill: $sec-color;
+        }
+    }
+
+    &__full-name {
+        display: block;
+        @include font($sec-font, 18px);
+        color: rgb(6, 32, 51);
+        margin-bottom: 16px;
+    }
+
+    &__full-name:hover,
+    &__full-name:focus {
+        color: $main-color;
+    }
+
+    &__position {
+        display: block;
+        @include font($sec-font, 13px);
+        color: rgba(6, 32, 51, 0.56);
+    }
+}
+
+
+
