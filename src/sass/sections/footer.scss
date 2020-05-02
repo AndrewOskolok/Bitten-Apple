@@ -37,7 +37,7 @@
     max-width: 156px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 38px auto;
+    margin: 0 auto 34px auto;
 
     &-link {
       display: flex;
@@ -91,18 +91,6 @@
 
 .contact__form-wrap {
   margin-bottom: 45px;
-}
-
-.contact-form__user-list {
-  margin-bottom: 28px;
-
-  & :not(:last-child) {
-    margin-bottom: 25px;
-  }
-}
-
-.contact-form__user-list :not(:last-child) {
-  margin-bottom: 25px;
 }
 
 .user-list__item-input {
@@ -181,11 +169,11 @@
 }
 
 .contact__info-tel {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 .contact__info-email {
-  margin-bottom: 44px;
+  margin-bottom: 64px;
 }
 
 .bottom_line {
@@ -207,5 +195,128 @@
 
   &_span {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form__user-list {
+    margin-bottom: 28px;
+
+    & :not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-image: url(../../images/footer/tablet_bg.jpg);
+
+    &::after {
+      bottom: 60px;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 72px;
+  }
+
+  .contact {
+    padding-top: 64px;
+    padding-bottom: 20px;
+
+    &__info-description {
+      max-width: 420px;
+      margin: 0 auto 36px auto;
+    }
+
+    &__info-social {
+      margin: 0 auto 20px auto;
+    }
+
+    &__info-tel {
+      margin-bottom: 2px;
+    }
+
+    &__info-email {
+      margin-bottom: 60px;
+    }
+
+    &__form {
+      &-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__info-template {
+      margin-left: -6px;
+    }
+  }
+
+  .contact-form__user-list {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .user-list__item {
+    margin: 0;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  .contact-form__user-message {
+    width: 570px;
+    height: 179px;
+  }
+
+  .contact-form__btn {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    background-image: url(../../images/footer/desktop_bg.jpg);
+
+    &::after {
+      bottom: 62px;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 122px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .contact__form-wrap {
+    display: block;
+  }
+
+  .contact-form__btn {
+    margin-right: 0;
+    margin-bottom: 94px;
+  }
+
+  .contact__info {
+    &-title,
+    &-description,
+    &-tel,
+    &-email {
+      text-align: start;
+    }
+
+    &-social {
+      margin-left: 0;
+    }
   }
 }
