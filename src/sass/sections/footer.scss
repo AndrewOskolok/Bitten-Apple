@@ -63,6 +63,7 @@
       &:hover .social-link-svg,
       &:focus .social-link-svg {
         fill: rgb(228, 224, 33);
+        transition: 0.2s;
       }
     }
   }
@@ -158,6 +159,7 @@
   &:focus {
     cursor: pointer;
     color: rgb(228, 224, 33);
+    transition: 0.2s;
   }
 }
 
