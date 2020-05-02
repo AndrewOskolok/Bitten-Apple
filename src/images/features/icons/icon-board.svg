@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 30 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<image width="30" height="28" data-name="icon board" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEUat5j///8at5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gAAAAW8oYWAAAAEXRSTlMAABVogCzoLcvM/UD6yivnaYYvyQkAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wcLEREejRdPqQAAAIFJREFUKM+tk8kOgDAIRLGt+8r//6xgCXqAqNU5kb5mMmEBCDFZiqEiQd2graZl3KGnnvGAaJojDozpG1xViej9MRbHUYqMqRAsaZIUGTMqxzfmZzTFdnLFRclVNta2fEv+Av/V85uBlm7L5K7ixHh2F3lmvKzeGdSMIWym+XYc0Q73PB5AbYu11AAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="28px" viewBox="0 0 30 28" enable-background="new 0 0 30 28" xml:space="preserve">  <image id="image0" width="30" height="28" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUat5gat5gat5gat5ga
+t5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5gat5j////mtl2uAAAAEHRSTlMAFWiA
+LOgty8z9QPrKK+dpWxs7PAAAAAFiS0dEEeK1PboAAAAHdElNRQfkBQEXCDIoOnVcAAAAf0lEQVQo
+z62TSw6AIAxEy09FUHr/02qhQRclKDqrpo8Mk1IAlDaStAKSdSjLTYRnbGkh7BFFc0RP+DwGkrj/
+CLPjykXpU1EwpzFc1M4H3DG/olUsJ694KPndU8B1LN+Sv8B/zbzzoKPbEpqrGAjH5iJHwtveoM7m
+S1QSzVP+RAdBcht3OHVLnAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wNS0wMVQyMzowODo1MCsw
+MzowMIlYM8QAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDUtMDFUMjM6MDg6NTArMDM6MDD4BYt4
+AAAAAElFTkSuQmCC" />
 </svg>
