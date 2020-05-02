@@ -98,7 +98,6 @@
     }
 
     &__list {
-      position: relative;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -133,14 +132,10 @@
     &__desc {
       margin-bottom: 148px;
       width: 970px;
-      @include font($sec-font, 18px, 400, 36px)
     }
 
     &__list {
       position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
 
       &::before {
         display: block;
@@ -156,11 +151,8 @@
       }
     }
 
-    &__item {
-      
-      &:not(:nth-child(n + 3)) {
-        margin-right: 480px;
-      }
+    &__item:not(:nth-child(n + 3)) {
+      margin-right: 480px;
     }
   }
 }
