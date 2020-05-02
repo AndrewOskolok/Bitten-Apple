@@ -56,25 +56,26 @@
 .slider {
   max-width: 64px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+  &__button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgba(40, 37, 40, 0.2);
 
-.slider__list-item-button {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 0;
-  border-radius: 50%;
-  background-color: rgba(40, 37, 40, 0.2);
+    &:first-child {
+      background-color: rgb(26, 183, 152);
+    }
 
-  &:hover,
-  &:focus {
-    background-color: rgb(26, 183, 152);
-    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: rgb(26, 183, 152);
+      cursor: pointer;
+    }
   }
 }
 
@@ -114,6 +115,10 @@
         transform: translate(214px, -42px);
       }
     }
+  }
+
+  .customer-review__span {
+    display: none;
   }
 }
 
