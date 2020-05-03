@@ -47,6 +47,7 @@
       height: 42px;
       border: 0;
       border-radius: 50%;
+      transition: background-color 0.2s linear;
 
       &_facebook {
         background-color: rgb(59, 89, 151);
@@ -60,11 +61,9 @@
         background-color: rgb(0, 122, 185);
       }
 
-      &:hover .social-link-svg,
-      &:focus .social-link-svg {
-        width: 58%;
-        height: 58%;
-        transition: 0.2s;
+      &:hover,
+      &:focus {
+        background-color: rgb(102, 102, 102);
       }
     }
   }
@@ -155,12 +154,12 @@
   @include font($sec-font, 22px, 400, 50px);
   color: $sec-color;
   margin-bottom: 58px;
+  transition: background-color 0.2s linear;
 
   &:hover,
   &:focus {
     cursor: pointer;
-   font-size: 26px;
-    transition: 0.2s;
+    background-color: rgb(102, 102, 102);
   }
 }
 
