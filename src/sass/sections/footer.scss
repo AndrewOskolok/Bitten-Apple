@@ -201,7 +201,7 @@
 }
 
 @media (max-width: 767px) {
-  .contact-form__user-list {
+  .user-list {
     margin-bottom: 28px;
 
     & :not(:last-child) {
@@ -258,7 +258,7 @@
     }
   }
 
-  .contact-form__user-list {
+  .user-list {
     display: flex;
     margin-bottom: 30px;
   }
