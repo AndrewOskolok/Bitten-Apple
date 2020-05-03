@@ -60,10 +60,11 @@
         background-color: rgb(0, 122, 185);
       }
 
-      &:hover,
-      &:focus {
-        background-color: transparentize($sec-color, 0.8);
-        transition: 0.5s;
+      &:hover .social-link-svg,
+      &:focus .social-link-svg {
+        width: 58%;
+        height: 58%;
+        transition: 0.2s;
       }
     }
   }
@@ -158,8 +159,8 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    background-color: transparentize($sec-color, 0.8);
-    transition: 0.5s;
+   font-size: 26px;
+    transition: 0.2s;
   }
 }
 
