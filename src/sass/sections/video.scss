@@ -139,19 +139,29 @@
         height: 43px;
       }
 
-      &-container {
+      &-bar {
         display: block;
         position: absolute;
         right: 20px;
         bottom: 20px;
         height: 31px;
-      }
 
-      &-icon--container {
-        width: 371px;
-        height: 31px;
-        opacity: 0.8;
-        fill: rgb(42, 41, 41);
+        &-icon--container {
+          width: 371px;
+          height: 31px;
+          opacity: 0.8;
+          fill: rgb(42, 41, 41);
+        }
+
+        &-icon--border {
+          position: absolute;
+          top: 10px;
+          left: 13px;
+          width: 256px;
+          height: 12px;
+          fill-opacity: 0;
+          stroke: #969696;
+        }
       }
     }
   }
