@@ -1,11 +1,9 @@
-.header {
-    
+.header { 
     background-image: url("../images/header/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 105px;
-    min-width: 320px;
 
     &__item {
         @include font($sec-font, 12px, 400, 36px);
@@ -29,10 +27,6 @@
         transform: translateY(13px);   
     }
 
-    &__list {
-        margin-bottom: 20px;
-    }
-
     &__title {
         @include font($main-font, 25px, 700, 1.4);
         color: $sec-color;
@@ -45,6 +39,10 @@
         margin-bottom: 25px;
         width: 190px;
     }   
+
+    &__list {
+        margin-bottom: 20px;
+    }
    
     &__btn-clik {
         @include font($sec-font, 20px, 600, 1.8);
@@ -54,12 +52,10 @@
         color: $sec-color;
         width: 211px;
         height: 48px;
-        border-style: none;
         text-align: right;
         border: none;
         padding-right: 39px;
         margin-left: 23px;
-        box-sizing: border-box;
         outline: none;
         position: relative;
         transition: all 0.2s linear;
@@ -91,10 +87,10 @@
     justify-content: space-between; 
     align-content: center;  
 }
+
 .logo__link {
     @include font($main-font, 22px, 600, 1.2); 
-    color: $main-color;
-    text-align: left;
+    color: $main-color;   
 }
 
 .navigation {
@@ -104,6 +100,7 @@
     &__list {
         display: none;
     }
+
     &__icon-burger {
         margin-right: 0;
     }
@@ -114,8 +111,8 @@
     .logo__link {
         font-size: 30px;    
     }
+
     .navigation {
-       
         margin-bottom: 168px; 
            
         &__icon {
@@ -124,12 +121,12 @@
     
         &__list {
             display: flex;
-            justify-content: space-between;
         }
     
         &__item:not(:last-child) {
             margin-right: 40px;
         }
+
         &__link:hover {
             color: rgb(40, 37, 40);
         }
@@ -157,6 +154,7 @@
             font-size: 42px;
             line-height: 0.857;
             color: $sec-color;
+            line-height: 48px;
         }
 
         &__description {
@@ -165,6 +163,7 @@
             font-weight: 600;
             width: 450px;
             margin-bottom: 30px;
+           
         } 
 
         &__item {
