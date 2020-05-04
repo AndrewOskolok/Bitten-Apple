@@ -1,6 +1,9 @@
 .video {
-  padding: 50px 0 60px;
   background-color: rgb(49, 212, 231);
+
+  &__wrapper {
+    padding: 50px 0 60px;
+  }
 
   &__title {
     margin-bottom: 8px;
@@ -92,10 +95,6 @@
       fill: $sec-color;
       width: 15px;
       height: 19px;
-    }
-
-    &-container {
-      display: none;
     }
   }
 
@@ -245,7 +244,9 @@
 
 @media (min-width: 768px) {
   .video {
-    padding: 94px 0 106px;
+    &__wrapper {
+      padding: 94px 0 106px;
+    }
 
     &__title {
       margin-bottom: 14px;
@@ -286,9 +287,8 @@
 
 @media (min-width: 1200px) {
   .video {
-    padding: 72px 0 68px;
-
     &__wrapper {
+      padding: 72px 0 68px;
       display: flex;
       justify-content: space-between;
       align-items: center;
