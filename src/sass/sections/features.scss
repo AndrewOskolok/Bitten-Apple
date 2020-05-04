@@ -1,8 +1,3 @@
-.section-title::before,
-.section-title::after {
-  margin: 0 10px;
-}
-
 .features {
   &__wrap {
     padding: 58px 0 52px;
@@ -10,6 +5,23 @@
 
   &-title {
     margin-bottom: 26px;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      background-color: rgba(83, 91, 100, 0.4);
+      width: 60px;
+      height: 1px;
+    }
+
+    &::before {
+      margin-right: 10px;
+    }
+
+    &::after {
+      margin-left: 10px;
+    }
   }
 
   &__desc {
@@ -76,11 +88,6 @@
 }
 
 @media (min-width: 768px) {
-  .section-title::before,
-  .section-title::after {
-    margin: 0 15px;
-  }
-
   .features {
     &__wrap {
     padding: 114px 0 110px;
@@ -89,6 +96,14 @@
     &-title {
       margin-bottom: 50px;
       font-size: 28px;
+
+      &::before {
+        margin-right: 15px;
+      }
+  
+      &::after {
+        margin-left: 15px;
+      }
     }
 
     &__desc {

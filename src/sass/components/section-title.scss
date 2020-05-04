@@ -8,15 +8,6 @@
   font-weight: 700;
   color: $main-color;
   text-transform: uppercase;
-
-  &::before,
-  &::after {
-    display: block;
-    content: "";
-    background-color: rgba(83, 91, 100, 0.4);
-    width: 60px;
-    height: 1px;
-  }
 }
 
 @media (min-width: 768px) {

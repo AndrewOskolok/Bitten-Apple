@@ -9,13 +9,20 @@
   color: $sec-color;
   margin-bottom: 44px;
 
-  &::before {
+  &::before,
+  &::after {
+    display: block;
+    content: "";
     background-color: $sec-color;
+    width: 60px;
+    height: 1px;
+  }
+
+  &::before {
     margin-right: 12px;
   }
 
   &::after {
-    background-color: $sec-color;
     margin-left: 12px;
   }
 }
@@ -121,6 +128,7 @@
 
   &__info-tel,
   &__info-email {
+    display: block;
     @include font($sec-font, 14px, 700, 24px);
     color: rgb(191, 172, 226);
     text-align: center;
@@ -198,8 +206,16 @@
     background-image: url(../../images/footer/tablet_bg.jpg);
   }
 
-  .section-title {
+  .section-title--color {
     margin-bottom: 72px;
+
+    &::before {
+      margin-right: 16px;
+    }
+  
+    &::after {
+      margin-left: 16px;
+    }
   }
 
   .contact {
@@ -261,7 +277,7 @@
     background-image: url(../../images/footer/desktop_bg.jpg);
   }
 
-  .section-title {
+  .section-title--color {
     margin-bottom: 122px;
   }
 

@@ -87,11 +87,6 @@
     font-size: 18px;
     display: block;
 
-    &::before,
-    &::after {
-      display: none;
-    }
-
     &__span {
       display: block;
       margin: 0 auto;
@@ -133,6 +128,15 @@
   .review-title {
     margin-bottom: 62px;
     font-size: 28px;
+
+    &::before,
+    &::after {
+      display: block;
+      content: '';
+      background-color: rgba(83, 91, 100, 0.4);
+      width: 60px;
+      height: 1px;
+    }
 
     &::before {
       margin-right: 33px;
