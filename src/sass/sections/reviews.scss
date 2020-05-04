@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 
-.section-title {
+.review-title {
   line-height: 28px;
   margin-bottom: 46px;
 }
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 767px) {
-  .section-title {
+  .review-title {
     font-size: 18px;
     display: block;
 
@@ -93,7 +93,7 @@
       display: none;
     }
 
-    &-span {
+    &__span {
       display: block;
       margin: 0 auto;
       position: relative;
@@ -129,8 +129,7 @@
     padding-bottom: 110px;
   }
 
-  .section-title {
-    // display: block;
+  .review-title {
     margin-bottom: 62px;
     font-size: 28px;
 
