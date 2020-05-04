@@ -1,0 +1,25 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="arrow" viewBox="0 0 27 32">
+<path d="M0.057 31.966l-0.057 0.034v-32l26.666 15.933z"></path>
+</symbol>
+<symbol id="border" viewBox="0 0 683 32">
+<path d="M1.392 1.333h679.827l0.115 29.333h-680z"></path>
+</symbol>
+<symbol id="buff" viewBox="0 0 725 32">
+<path d="M-0.005 0h725.172l0.231 32h-725.403v-32z"></path>
+</symbol>
+<symbol id="container" viewBox="0 0 382 32">
+<path d="M5.206 0h371.091c3.205 0 5.802 2.598 5.802 5.802v0 20.595c0 3.095-2.509 5.604-5.604 5.604v0h-371.091c-2.985 0-5.405-2.42-5.405-5.405 0-0 0-0.001 0-0.001v0-21.389c0-2.875 2.331-5.206 5.206-5.206v0z"></path>
+</symbol>
+<symbol id="full-screen" viewBox="0 0 32 32">
+<path d="M13.416 22.88l-4.291-4.293-5.2 5.2-3.955-3.973v12.213h12.203l-3.955-3.947zM28.24 23.787l-5.2-5.2-4.291 4.293 5.197 5.2-3.955 3.947h12.203v-12.213zM19.992-0.027l3.955 3.947-5.197 5.2 4.291 4.293 5.2-5.2 3.955 3.947v-12.187h-12.203zM8.219 3.92l3.955-3.947h-12.203v12.187l3.955-3.947 5.2 5.2 4.291-4.293z"></path>
+</symbol>
+<symbol id="loading-bar" viewBox="0 0 1007 32">
+<path d="M-0.005 0h1006.432l0.286 32h-1006.717v-32z"></path>
+</symbol>
+<symbol id="vline" viewBox="0 0 9 32">
+<path d="M0 0l8.614 0.087v31.913l-8.614-0.087v-31.913z"></path>
+</symbol>
+</defs>
+</svg>
