@@ -1,0 +1,197 @@
+.header { 
+    background-image: url("../images/header/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 105px;
+
+    &__item {
+        @include font($sec-font, 12px, 400, 36px);
+        color: $sec-color;
+        position: relative;
+        padding-left: 25px; 
+    }
+          
+    &__item::before {
+        display: block;
+        background-image: url("../images/header/arrow.png");
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        color: $text-color;
+        width: 7px;
+        height: 12px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translateY(13px);   
+    }
+
+    &__title {
+        @include font($main-font, 25px, 700, 1.4);
+        color: $sec-color;
+        margin-bottom: 3px;   
+    }
+
+    &__description {
+        @include font($sec-font, 18px, 400, 1.3);
+        color: $sec-color;
+        margin-bottom: 25px;
+        width: 190px;
+    }   
+
+    &__list {
+        margin-bottom: 20px;
+    }
+   
+    &__btn-clik {
+        @include font($sec-font, 20px, 600, 1.8);
+        display: block;
+        border-radius: 5px;
+        background-color: rgb(26, 183, 152);
+        color: $sec-color;
+        width: 211px;
+        height: 48px;
+        text-align: right;
+        border: none;
+        padding-right: 39px;
+        margin-left: 23px;
+        outline: none;
+        position: relative;
+        transition: all 0.2s linear;
+
+        &::before { 
+            display: block;
+            background-image: url("../images/header/cloud.png");
+            content: "";
+            background-repeat: no-repeat;
+            width: 36px;
+            height: 24px;
+            top: 12px;
+            left: 22px;
+            position: absolute;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: rgb(102, 102, 102);       
+        }
+    }
+}
+
+.header-wrapper {
+    height: 80px;
+    min-width: 292px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    align-content: center;  
+}
+
+.logo__link {
+    @include font($main-font, 22px, 600, 1.2); 
+    color: $main-color;   
+}
+
+.navigation {
+    background-color: $sec-color;
+    margin-bottom: 88px;
+
+    &__list {
+        display: none;
+    }
+
+    &__icon-burger {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .logo__link {
+        font-size: 30px;    
+    }
+
+    .navigation {
+        margin-bottom: 168px; 
+           
+        &__icon {
+            display: none;
+        }
+    
+        &__list {
+            display: flex;
+        }
+    
+        &__item:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &__link:hover {
+            color: rgb(40, 37, 40);
+        }
+    
+        &__link {
+            @include font($sec-font, 12px, 700, 36px);
+            display: block;
+            color: rgba(40, 37, 40, 0.6);
+            text-transform: uppercase; 
+            transition: all 0.2s linear;
+        }
+       
+    }
+    .header {
+        background-image: url("../images/header/bg_tablet.jpg");
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 150px;
+    
+        &__list {
+            margin-bottom: 67px;
+        }
+
+        &__title {
+            font-size: 42px;
+            line-height: 0.857;
+            color: $sec-color;
+            line-height: 48px;
+        }
+
+        &__description {
+            font-size: 22px;
+            line-height: 1.636;
+            font-weight: 600;
+            width: 450px;
+            margin-bottom: 30px;
+           
+        } 
+
+        &__item {
+           font-size: 16px;
+           line-height: 2.25;
+        }
+
+        &__screens {
+            position: relative;
+        
+            &::before {
+                background-image: url("../images/header/screen_tablet.png");
+                width: 303px;
+                height: 445px;
+                position: absolute;
+                content: "";
+                top: 126px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__screens::before {
+        background-image: url("../images/header/screen_desctop.png");
+        width: 452px;
+        height: 663px;  
+        top: -61px;
+    }
+}
