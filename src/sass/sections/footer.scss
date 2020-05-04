@@ -15,9 +15,28 @@
   }
 }
 
+.section-title {
+  color: $sec-color;
+  margin-bottom: 44px;
+
+  &::before {
+    background-color: $sec-color;
+    margin-right: 12px;
+  }
+
+  &::after {
+    background-color: $sec-color;
+    margin-left: 12px;
+  }
+}
+
 .contact {
   padding-top: 58px;
   padding-bottom: 24px;
+
+  &__form-wrap {
+    margin-bottom: 45px;
+  }
 
   &__info-title {
     @include font($main-font, 24px, 400, 1);
@@ -67,31 +86,79 @@
       }
     }
   }
+
+  &__form-btn {
+    border: 0;
+    display: block;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgb(49, 212, 231);
+    margin: 0 auto;
+    @include font($sec-font, 22px, 400, 50px);
+    color: $sec-color;
+    margin-bottom: 58px;
+    transition: background-color 0.2s linear;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: rgb(102, 102, 102);
+    }
+  }
+
+  &__form-user-message {
+    border: 0;
+    display: block;
+    width: 270px;
+    height: 174px;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    resize: none;
+
+    &::placeholder {
+      @include font($sec-font, 16px, 400, 24px);
+      color: rgb(193, 193, 193);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__info-tel,
+  .contact__info-email {
+    @include font($sec-font, 14px, 700, 24px);
+    color: rgb(191, 172, 226);
+    text-align: center;
+  }
+
+  &__info-tel {
+    margin-bottom: 2px;
+  }
+
+  &__info-email {
+    margin-bottom: 64px;
+  }
+
+  &__info-template {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6px;
+    @include font($sec-font, 14px, 400, 21px);
+    color: rgba(255, 255, 255, 0.502);
+  
+    &_span {
+      display: block;
+    }
+  }
 }
 
 .social-link-svg {
   fill: $sec-color;
   width: 20px;
   height: 20px;
-}
-
-.section-title {
-  color: $sec-color;
-  margin-bottom: 44px;
-
-  &::before {
-    background-color: $sec-color;
-    margin-right: 12px;
-  }
-
-  &::after {
-    background-color: $sec-color;
-    margin-left: 12px;
-  }
-}
-
-.contact__form-wrap {
-  margin-bottom: 45px;
 }
 
 .user-list__item-input {
@@ -120,83 +187,6 @@
   &:required:focus:valid:not(:placeholder-shown),
   &:required:focus:valid:not(:placeholder-shown) {
     border: 2px solid rgb(9, 129, 9);
-  }
-}
-
-.contact-form__user-message {
-  border: 0;
-  display: block;
-  width: 270px;
-  height: 174px;
-  border-radius: 7px;
-  padding: 12px 20px;
-  margin: 0 auto;
-  resize: none;
-
-  &::placeholder {
-    @include font($sec-font, 16px, 400, 24px);
-    color: rgb(193, 193, 193);
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.contact-form__btn {
-  border: 0;
-  display: block;
-  width: 170px;
-  height: 50px;
-  border-radius: 3px;
-  background-color: rgb(49, 212, 231);
-  margin: 0 auto;
-  @include font($sec-font, 22px, 400, 50px);
-  color: $sec-color;
-  margin-bottom: 58px;
-  transition: background-color 0.2s linear;
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    background-color: rgb(102, 102, 102);
-  }
-}
-
-.contact__info-tel,
-.contact__info-email {
-  @include font($sec-font, 14px, 700, 24px);
-  color: rgb(191, 172, 226);
-  text-align: center;
-}
-
-.contact__info-tel {
-  margin-bottom: 2px;
-}
-
-.contact__info-email {
-  margin-bottom: 64px;
-}
-
-.bottom_line {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 0px;
-  top: 5818px;
-  width: 320px;
-  height: 5px;
-  z-index: 193;
-}
-
-.contact__info-template {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 6px;
-  @include font($sec-font, 14px, 400, 21px);
-  color: rgba(255, 255, 255, 0.502);
-
-  &_span {
-    display: block;
   }
 }
 
@@ -256,6 +246,15 @@
     &__info-template {
       margin-left: -6px;
     }
+
+    &__form-user-message {
+      width: 570px;
+      height: 179px;
+    }
+
+    &__form-btn {
+      margin-bottom: 52px;
+    }
   }
 
   .user-list {
@@ -269,15 +268,6 @@
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
-  }
-
-  .contact-form__user-message {
-    width: 570px;
-    height: 179px;
-  }
-
-  .contact-form__btn {
-    margin-bottom: 52px;
   }
 }
 
@@ -304,7 +294,7 @@
     display: block;
   }
 
-  .contact-form__btn {
+  .contact__form-btn {
     margin-right: 0;
     margin-bottom: 94px;
   }
