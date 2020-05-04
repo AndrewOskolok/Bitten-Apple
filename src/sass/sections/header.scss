@@ -59,6 +59,7 @@
         outline: none;
         position: relative;
         transition: all 0.2s linear;
+        cursor: pointer;
 
         &::before { 
             display: block;
