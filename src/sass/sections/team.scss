@@ -7,7 +7,11 @@
 }
 
 .team {
-  padding-top: 58px;
+  padding: 58px 0 26px;
+  
+    &__title {
+        margin-bottom: 34px;
+    }
     
     &__deskription {
         display: block;
@@ -15,7 +19,7 @@
         text-align: center;
         margin: 0 auto;
         @include font($sec-font, 16px, 700, 26px);
-        padding: 34px 0 50px;
+        margin-bottom: 50px;
 
         &-continuation {
             display: none;
@@ -49,7 +53,6 @@
         display: block;
         position: absolute;
         opacity: 0;
-        width: 270px;
         padding: 22px;
         top: 0;
         right: 0;
@@ -119,7 +122,6 @@
         color: rgb(6, 32, 51);
         margin-bottom: 16px;
         transition: color 0.2s linear;
-
     }
 
     &__position {
@@ -133,21 +135,21 @@
     .team__list-item:not(:last-child) {
         margin-bottom: 54px;
     }
-
-    .team__list-item:last-child {
-        margin-bottom: 26px;
-    }
 }
 
 @media (min-width: 768px) {
     
     .team {
-        padding-top: 104px;
+        padding: 104px 0 52px;
+
+        &__title {
+            margin-bottom: 66px;
+        }
 
         &__deskription {
             line-height: 24px;
             width: 550px;
-            padding: 66px 0 70px;
+            margin-bottom: 70px;
 
 
             &-continuation {
@@ -165,32 +167,20 @@
     .team__list-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 62px;
     }
-
-   .team__list-item:nth-last-child(-n+2) {
-        margin-bottom: 52px;
-    }
 }
 
 @media (min-width: 1200px) {
 
-    .container {
-        width: 1170px;
-    }
-
     .team {
-        padding-top: 92px;
+        padding: 92px 0 70px;
 
         &__deskription {
             width: 1010px;
-            padding-bottom: 104px;
+            margin-bottom: 104px;
         }
 
         &__list-item:not(:last-child) {
-            margin-right: 30px;
-        }
-
-        &__list-item:nth-last-child(-n+4) {
-            margin-bottom: 70px;
+            margin-right: 22px;
         }
     }
 }
