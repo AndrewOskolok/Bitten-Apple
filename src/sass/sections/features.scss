@@ -1,7 +1,3 @@
-.section-title {
-  margin-bottom: 26px;
-}
-
 .section-title::before,
 .section-title::after {
   margin: 0 10px;
@@ -9,6 +5,10 @@
 
 .features {
   padding: 58px 0 52px;
+
+  &-title {
+    margin-bottom: 26px;
+  }
 
   &__desc {
     margin: 0 auto 28px;
@@ -78,11 +78,6 @@
 }
 
 @media (min-width: 768px) {
-  .section-title {
-    margin-bottom: 50px;
-    font-size: 28px;
-  }
-
   .section-title::before,
   .section-title::after {
     margin: 0 15px;
@@ -90,6 +85,11 @@
 
   .features {
     padding: 114px 0 110px;
+
+    &-title {
+      margin-bottom: 50px;
+      font-size: 28px;
+    }
 
     &__desc {
       margin-bottom: 56px;
@@ -122,12 +122,12 @@
 }
 
 @media (min-width: 1200px) {
-  .section-title {
-    margin-bottom: 78px;
-  }
-
   .features {
     padding: 114px 0 110px;
+
+    &-title {
+      margin-bottom: 78px;
+    }
 
     &__desc {
       margin-bottom: 148px;
