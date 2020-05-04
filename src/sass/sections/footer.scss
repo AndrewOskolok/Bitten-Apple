@@ -3,16 +3,6 @@
   background-image: url(../../images/footer/mobile_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  &::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100vw;
-    height: 1px;
-    background-color: transparentize($sec-color, 0.72);
-    bottom: 82px;
-  }
 }
 
 .section-title {
@@ -32,7 +22,7 @@
 
 .contact {
   padding-top: 58px;
-  padding-bottom: 24px;
+  padding-bottom: 42px;
 
   &__form-wrap {
     margin-bottom: 45px;
@@ -128,7 +118,7 @@
   }
 
   &__info-tel,
-  .contact__info-email {
+  &__info-email {
     @include font($sec-font, 14px, 700, 24px);
     color: rgb(191, 172, 226);
     text-align: center;
@@ -138,17 +128,13 @@
     margin-bottom: 2px;
   }
 
-  &__info-email {
-    margin-bottom: 64px;
-  }
-
   &__info-template {
     display: flex;
     flex-wrap: wrap;
     margin-left: 6px;
     @include font($sec-font, 14px, 400, 21px);
     color: rgba(255, 255, 255, 0.502);
-  
+
     &_span {
       display: block;
     }
@@ -190,6 +176,11 @@
   }
 }
 
+.footer__copyright {
+  border-top: 1px solid transparentize($sec-color, 0.72);
+  padding: 24px 0;
+}
+
 @media (max-width: 767px) {
   .user-list {
     margin-bottom: 28px;
@@ -203,10 +194,6 @@
 @media (min-width: 768px) {
   .footer {
     background-image: url(../../images/footer/tablet_bg.jpg);
-
-    &::after {
-      bottom: 60px;
-    }
   }
 
   .section-title {
@@ -215,7 +202,7 @@
 
   .contact {
     padding-top: 64px;
-    padding-bottom: 20px;
+    padding-bottom: 42px;
 
     &__info-description {
       max-width: 420px;
@@ -228,10 +215,6 @@
 
     &__info-tel {
       margin-bottom: 2px;
-    }
-
-    &__info-email {
-      margin-bottom: 60px;
     }
 
     &__form {
@@ -274,10 +257,6 @@
 @media (min-width: 1200px) {
   .footer {
     background-image: url(../../images/footer/desktop_bg.jpg);
-
-    &::after {
-      bottom: 62px;
-    }
   }
 
   .section-title {
@@ -290,13 +269,17 @@
     justify-content: space-between;
   }
 
+  .contact {
+    padding-bottom: 66px;
+  }
+
   .contact__form-wrap {
     display: block;
   }
 
   .contact__form-btn {
     margin-right: 0;
-    margin-bottom: 94px;
+    margin-bottom: 0;
   }
 
   .contact__info {
