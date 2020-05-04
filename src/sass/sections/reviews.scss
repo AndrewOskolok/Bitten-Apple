@@ -11,11 +11,9 @@
 .review-card__photo {
   width: 100px;
   height: 100px;
-  margin: 0 auto 26px auto;
+  margin: 0 auto 26px;
 
   &-img {
-    width: 100%;
-    height: auto;
     border-radius: 50%;
     border: 2px solid rgb(196, 199, 199);
   }
@@ -35,11 +33,11 @@
 }
 
 .customer-review {
-  max-width: 228px;
+  width: 228px;
   @include font($sec-font, 16px, 400, 26px);
   color: $text-color;
   text-align: center;
-  margin: 0 auto 18px auto;
+  margin: 0 auto 18px;
 
   &::before {
     position: relative;
@@ -47,32 +45,36 @@
     display: block;
     width: 50px;
     height: 40px;
-    background-image: url(../../images/reviews/“.png);
+    background-image: url(../images/reviews/“.png);
     transform: translate(-30px, 20px);
     z-index: -1;
   }
 }
 
 .slider {
-  max-width: 64px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  &__button {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border: 0;
-    border-radius: 50%;
-    background-color: rgba(40, 37, 40, 0.2);
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
 
-    &:first-child {
+    &-btn {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 0;
+      border-radius: 50%;
+      background-color: rgba(40, 37, 40, 0.2);
+    }
+
+    &:first-child .slider__item-btn {
       background-color: rgb(26, 183, 152);
     }
 
-    &:hover,
-    &:focus {
+    &:hover .slider__item-btn,
+    &:focus .slider__item-btn {
       background-color: rgb(26, 183, 152);
       cursor: pointer;
       transition: 0.2s;
@@ -85,10 +87,7 @@
     font-size: 18px;
     display: block;
 
-    &::before {
-      display: none;
-    }
-
+    &::before,
     &::after {
       display: none;
     }
@@ -109,11 +108,13 @@
       }
 
       &::before {
-        transform: translate(18px, -14px);
+        top: 14px;
+        left: 16px;
       }
 
       &::after {
-        transform: translate(214px, -42px);
+        right: 16px;
+        top: 14px;
       }
     }
   }
@@ -145,7 +146,7 @@
   .customer-review {
     font-size: 18px;
     line-height: 36px;
-    max-width: 576px;
+    width: 576px;
     margin-bottom: 50px;
 
     &::before {
@@ -165,7 +166,7 @@
   }
 
   .customer-review {
-    max-width: 940px;
+    width: 940px;
 
     &::before {
       transform: translate(-50px, 26px);
