@@ -41,11 +41,13 @@
         margin: 0 auto 22px;
     }
 
-    &__list-item:hover .team__overlay {
+    &__list-item:hover .team__overlay,
+    &__list-item:focus-within .team__overlay {
         opacity: 1;
     }
     
-    &__list-item:hover .team__full-name {
+    &__list-item:hover .team__full-name,
+    &__list-item:focus-within .team__full-name {
         color: $main-color;
     }
 
