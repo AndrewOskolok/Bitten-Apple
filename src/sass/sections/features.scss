@@ -4,7 +4,9 @@
 }
 
 .features {
-  padding: 58px 0 52px;
+  &__wrap {
+    padding: 58px 0 52px;
+  }
 
   &-title {
     margin-bottom: 26px;
@@ -14,11 +16,7 @@
     margin: 0 auto 28px;
     text-align: center;
     color: $text-color;
-    @include font($main-font, 16px, 400, 26px)
-  }
-
-  &__list {
-    position: relative;
+    @include font($main-font, 16px, 400, 26px);
   }
 
   &__item {
@@ -62,12 +60,12 @@
   &__item-title {
     margin-bottom: 10px;
     color: $text-color;
-    @include font($main-font, 18px, 700)
+    @include font($main-font, 18px, 700);
   }
 
   &__item-desc {
     color: $text-color;
-    @include font($sec-font, 13px, 400, 24px)
+    @include font($sec-font, 13px, 400, 24px);
   }
 }
 
@@ -84,7 +82,9 @@
   }
 
   .features {
+    &__wrap {
     padding: 114px 0 110px;
+    }
 
     &-title {
       margin-bottom: 50px;
@@ -123,7 +123,9 @@
 
 @media (min-width: 1200px) {
   .features {
+    &__wrap {
     padding: 114px 0 110px;
+    }
 
     &-title {
       margin-bottom: 78px;
