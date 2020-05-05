@@ -1,196 +1,196 @@
 .team {
   padding: 58px 0 26px;
-  
-    &__title {
-        margin-bottom: 34px;
 
-      &::before,
-      &::after {
-        display: block;
-        content: "";
-        background-color: rgba(83, 91, 100, 0.4);
-        width: 60px;
-        height: 1px;
-      }
+  &__title {
+    margin-bottom: 34px;
 
-      &::before {
-        margin-right: 14px;
-      }
-
-      &::after {
-        margin-left: 14px;
-      }
-    }
-    
-    &__deskription {
-        display: block;
-        width: 260px;
-        text-align: center;
-        margin: 0 auto;
-        @include font($sec-font, 16px, 700, 26px);
-        margin-bottom: 50px;
-
-        &-continuation {
-            display: none;
-        }
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      background-color: rgba(83, 91, 100, 0.4);
+      width: 60px;
+      height: 1px;
     }
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    &::before {
+      margin-right: 14px;
     }
 
-    &__list-item {
-        text-align: center;
+    &::after {
+      margin-left: 14px;
+    }
+  }
+
+  &__deskription {
+    display: block;
+    width: 260px;
+    text-align: center;
+    margin: 0 auto;
+    @include font($sec-font, 16px, 700, 26px);
+    margin-bottom: 50px;
+
+    &-continuation {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__list-item {
+    text-align: center;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    margin: 0 auto 22px;
+  }
+
+  &__list-item:hover .team__overlay,
+  &__list-item:focus-within .team__overlay {
+    opacity: 1;
+  }
+
+  &__list-item:hover .team__full-name,
+  &__list-item:focus-within .team__full-name {
+    color: $main-color;
+  }
+
+  &__overlay {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    padding: 22px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparentize($main-color, 0.15);
+    transition: opacity 0.2s linear;
+
+
+    &-deskription {
+      @include font($sec-font, 16px, 400, 24px);
+      color: $sec-color;
+      margin-bottom: 58px;
     }
 
-    &__photo-wrapper {
-        position: relative;
-        margin: 0 auto 22px;
+    &-deskription-title {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    &-item-link {
+      position: relative;
+      display: block;
+      width: 42px;
+      height: 42px;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.2s linear;
     }
 
-    &__list-item:hover .team__overlay,
-    &__list-item:focus-within .team__overlay {
-        opacity: 1;
-    }
-    
-    &__list-item:hover .team__full-name,
-    &__list-item:focus-within .team__full-name {
-        color: $main-color;
+    &-item-link:hover,
+    &-item-link:focus {
+      background-color: transparentize($sec-color, 0.7);
+      cursor: pointer;
     }
 
-    &__overlay {
-        display: block;
-        position: absolute;
-        opacity: 0;
-        padding: 22px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: transparentize($main-color, 0.15);
-        transition: opacity 0.2s linear;
-
-
-        &-deskription {
-            @include font($sec-font, 16px, 400, 24px);
-            color: $sec-color;
-            margin-bottom: 58px;
-        }
-
-        &-deskription-title {
-            display: block;
-            font-weight: 700;
-            margin-bottom: 14px;
-        }
+    &-item:not(:last-child) {
+      margin-right: 4px;
     }
 
-    &__social {
-        display: flex;
-        justify-content: center;
-
-        &-item-link {
-            position: relative;
-            display: block;
-            width: 42px;
-            height: 42px;
-            background-color: rgba(0, 0, 0, 0.3);
-            transition: all 0.2s linear;
-        }
-        
-        &-item-link:hover,
-        &-item-link:focus {
-            background-color: transparentize($sec-color, 0.7);
-            cursor: pointer;
-        }
-
-        &-item:not(:last-child) {
-            margin-right: 4px;
-        }
-
-        &-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 20px;
-            fill: $sec-color;
-            transition: fill 0.2s linear;
-        }
-
-        &-item-link:hover .team__social-icon,
-        &-item-link:focus .team__social-icon {
-           fill: transparentize($sec-color, 0.3);
-           cursor: pointer;
-        }
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      fill: $sec-color;
+      transition: fill 0.2s linear;
     }
 
-    &__full-name {
-        display: block;
-        @include font($sec-font, 18px);
-        color: rgb(6, 32, 51);
-        margin-bottom: 16px;
-        transition: color 0.2s linear;
+    &-item-link:hover .team__social-icon,
+    &-item-link:focus .team__social-icon {
+      fill: transparentize($sec-color, 0.3);
+      cursor: pointer;
     }
+  }
 
-    &__position {
-        display: block;
-        @include font($sec-font, 13px);
-        color: rgba(6, 32, 51, 0.56);
-    }
+  &__full-name {
+    display: block;
+    @include font($sec-font, 18px);
+    color: rgb(6, 32, 51);
+    margin-bottom: 16px;
+    transition: color 0.2s linear;
+  }
+
+  &__position {
+    display: block;
+    @include font($sec-font, 13px);
+    color: rgba(6, 32, 51, 0.56);
+  }
 }
 
 @media (max-width: 767px) {
-    .team__list-item:not(:last-child) {
-        margin-bottom: 54px;
-    }
+  .team__list-item:not(:last-child) {
+    margin-bottom: 54px;
+  }
 }
 
 @media (min-width: 768px) {
-    
-    .team {
-        padding: 104px 0 52px;
 
-        &__title {
-            margin-bottom: 66px;
-        }
+  .team {
+    padding: 104px 0 52px;
 
-        &__deskription {
-            line-height: 24px;
-            width: 550px;
-            margin-bottom: 70px;
-
-
-            &-continuation {
-                display: inline-block;
-            }
-        }
+    &__title {
+      margin-bottom: 66px;
     }
+
+    &__deskription {
+      line-height: 24px;
+      width: 550px;
+      margin-bottom: 70px;
+
+
+      &-continuation {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .team__list-item:not(:nth-child(2n)) {
-        margin-right: 30px;
-    }
+  .team__list-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 
-    .team__list-item:not(:nth-last-child(-n+2)) {
-        margin-bottom: 62px;
-    }
+  .team__list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 62px;
+  }
 }
 
 @media (min-width: 1200px) {
 
-    .team {
-        padding: 92px 0 70px;
+  .team {
+    padding: 92px 0 70px;
 
-        &__deskription {
-            width: 1010px;
-            margin-bottom: 104px;
-        }
-
-        &__list-item:not(:last-child) {
-            margin-right: 22px;
-        }
+    &__deskription {
+      width: 1010px;
+      margin-bottom: 104px;
     }
+
+    &__list-item:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
 }
