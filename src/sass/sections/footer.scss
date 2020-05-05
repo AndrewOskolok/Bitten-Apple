@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-image: url(../../images/footer/mobile_bg.jpg);
+  background-image: url(../images/footer/mobile_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -203,7 +203,7 @@
 
 @media (min-width: 768px) {
   .footer {
-    background-image: url(../../images/footer/tablet_bg.jpg);
+    background-image: url(../images/footer/tablet_bg.jpg);
   }
 
   .section-title--color {
@@ -274,7 +274,7 @@
 
 @media (min-width: 1200px) {
   .footer {
-    background-image: url(../../images/footer/desktop_bg.jpg);
+    background-image: url(../images/footer/desktop_bg.jpg);
   }
 
   .section-title--color {
