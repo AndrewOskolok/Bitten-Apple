@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('.slider-new').slick({
+      arrows:false,
+      dots:true,
+      adaptiveHeight:true,
+      speed:1500,
+      autoplay:true,
+      autoplaySpeed:1500,
+      pauseOnFocus:true,
+      pauseOnHover:true,
+      pauseOnDotsHover:true,
+      waitForAnimate:true
+    });
+});
