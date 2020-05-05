@@ -45,13 +45,12 @@
     }
    
     &__btn-clik {
-        @include font($sec-font, 20px, 600, 1.8);
+        @include font($sec-font, 20px, 600, 48px);
         display: block;
         border-radius: 5px;
         background-color: rgb(26, 183, 152);
         color: $sec-color;
         width: 211px;
-        height: 48px;
         text-align: right;
         border: none;
         padding-right: 39px;
@@ -160,7 +159,6 @@
             font-weight: 600;
             width: 450px;
             margin-bottom: 30px;
-           
         } 
 
         &__item {
