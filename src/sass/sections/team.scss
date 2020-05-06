@@ -53,6 +53,7 @@
   &__list-item:hover .team__overlay,
   &__list-item:focus-within .team__overlay {
     opacity: 1;
+    visibility: visible;
   }
 
   &__list-item:hover .team__full-name,
@@ -71,7 +72,7 @@
     left: 0;
     background-color: transparentize($main-color, 0.15);
     transition: opacity 0.2s linear;
-
+    visibility: hidden;
 
     &-deskription {
       @include font($sec-font, 16px, 400, 24px);
