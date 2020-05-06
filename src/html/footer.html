@@ -2,18 +2,18 @@
   <div class="contact container">
     <h2 class="section-title section-title--color">Contact us</h2>
     <div class="contact-section">
-      <form action="#" class="contact__form">
+      <form action="telegram.php" class="contact__form" method="POST">
         <div class="contact__form-wrap">
           <ul class="user-list">
             <li class="user-list__item">
-              <input type="text" name="user-name" class="user-list__item-input" placeholder="Name" required
+              <input type="text" name="user-name" class="user-list__item-input ph-shown" placeholder="Name" required
                 minlength="2">
             </li>
             <li class="user-list__item">
-              <input type="email" name="user-email" class="user-list__item-input" placeholder="Email" required>
+              <input type="email" name="user-email" class="user-list__item-input ph-shown" placeholder="Email" required>
             </li>
           </ul>
-          <textarea name="user-message" class="contact__form-user-message" placeholder="Message" required
+          <textarea name="user-message" class="contact__form-user-message ph-shown" placeholder="Message" required
             minlength="10"></textarea>
         </div>
         <button type="submit" class="contact__form-btn">SUBMIT</button>
