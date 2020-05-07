@@ -8,17 +8,6 @@
   margin-bottom: 46px;
 }
 
-.review-card__photo {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 26px;
-
-  &-img {
-    border-radius: 50%;
-    border: 2px solid rgb(196, 199, 199);
-  }
-}
-
 .customer-name {
   @include font($sec-font, 18px, 500, 1.2);
   color: rgb(6, 32, 51);
@@ -51,34 +40,63 @@
   }
 }
 
-.slider {
+// SLIDER_NEW
+
+.slider-new__item-photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 26px;
+}
+
+.slider-new__item-img {
+  border-radius: 50%;
+  border: 2px solid rgb(196, 199, 199);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider-new .slick-slide {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.slider-new .slick-dots {
   display: flex;
   justify-content: center;
+}
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
+.slider-new .slick-dots li {
+  margin: 0 4px;
+}
 
-    &-btn {
-      display: block;
-      width: 10px;
-      height: 10px;
-      border: 0;
-      border-radius: 50%;
-      background-color: rgba(40, 37, 40, 0.2);
-    }
+.slider-new .slick-dots li.slick-active button {
+  outline: none;
+  background-color: rgb(26, 183, 152);
+}
 
-    &:first-child .slider__item-btn {
-      background-color: rgb(26, 183, 152);
-    }
+.slider-new .slick-dots li button {
+  font-size: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(40, 37, 40, 0.2);
 
-    &:hover .slider__item-btn,
-    &:focus .slider__item-btn {
-      background-color: rgb(26, 183, 152);
-      cursor: pointer;
-      transition: 0.2s;
-    }
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    outline: none;
   }
 }
 

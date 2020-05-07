@@ -253,6 +253,10 @@
       @include font($main-font, 28px, 400);
     }
 
+    &__desc {
+      width: 540px;
+    }
+
     &__dl {
       margin-bottom: 58px;
     }

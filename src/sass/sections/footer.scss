@@ -12,7 +12,7 @@
   &::before,
   &::after {
     display: block;
-    content: "";
+    content: '';
     background-color: $sec-color;
     width: 60px;
     height: 1px;
@@ -174,15 +174,17 @@
   &:focus {
     outline: none;
   }
+}
 
-  &:required:focus:invalid:not(:placeholder-shown),
-  &:required:focus:invalid:not(:placeholder-shown) {
-    border: 2px solid rgb(155, 8, 8);
+.ph-shown {
+  &:required:invalid:not(:placeholder-shown),
+  &:required:invalid:not(:placeholder-shown) {
+    border: 2px solid rgb(235, 16, 16);
   }
 
-  &:required:focus:valid:not(:placeholder-shown),
-  &:required:focus:valid:not(:placeholder-shown) {
-    border: 2px solid rgb(9, 129, 9);
+  &:required:valid:not(:placeholder-shown),
+  &:required:valid:not(:placeholder-shown) {
+    border: 2px solid rgb(20, 165, 20);
   }
 }
 
@@ -212,7 +214,7 @@
     &::before {
       margin-right: 16px;
     }
-  
+
     &::after {
       margin-left: 16px;
     }
